@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 - Web Frontend Development I - Nicholas Nixon</title>
+    <meta name="description"
+        content="This site is used for WDD 231 - Web Frontend Development I for Nicholas Nixon Home Page">
+    <meta name="author" content="Nicholas Nixon">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+    <script defer src="scripts/main.js"></script>
 </head>
 <body>
-    
+    <header>
+        <h2><span class="logo">NN</span>Nicholas Nixon</h2>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="#">Chamber</a>
+            <a href="#">Final</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>My name is Nicholas, you can call me Nick. I live in the Dallas, Texas area. I served in the U.S. Army
+                from
+                2008-2012
+                active duty, and 2012-2014 in the Idaho National Guard. After I moved to Texas to be with my wife. We
+                were
+                sealed in the Dallas Temple in May 2015. I have two wonderful children, one boy and one girl.</p>
+            <p>I have my associate's degree in computer science in software development from Richland Dallas Community
+                College. I currently work as IT Fab Support for Texas Instruments. I'm here to continue my education and
+                working on getting my bachelor degree here.</p>
+        </section>
+        
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Nick Image">
+        </section>
+
+        <section class="card">
+            <h2>Web Certificate Courses</h2>
+        </section>
+    </main>
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://github.com/SchoolTechBytes/wdd231">
+                <img src="images/github.svg" alt="Github Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/nicholasjamesnixon/">
+                <img src="images/linkedin-logo-icon.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram-logo-icon.svg" alt="Instagram Icon">
+            </a>
+        </nav>
+        <p>&copy;<span id="currentyear">e</span> 🐉 Nicholas Nixon 🐉 Mesquite, Texas</p>
+        <p id="lastModified">Last Modified: </p>
+    </footer>
 </body>
 </html>
