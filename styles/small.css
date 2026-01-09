@@ -64,7 +64,7 @@ footer {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, var(--teal), var(--sage));
+    background: linear-gradient(135deg, var(--teal), var(--slate));
     display: flex;
     align-items: center;
     justify-content: center;
