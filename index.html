@@ -7,45 +7,70 @@
     <meta name="description"
         content="This site is used for WDD 231 - Web Frontend Development I for Nicholas Nixon Home Page">
     <meta name="author" content="Nicholas Nixon">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Metamorphous&display=swap" rel="stylesheet">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
     <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/course.js"></script>
 </head>
 <body>
-    <header>
-        <h2><span class="logo">NN</span>Nicholas Nixon</h2>
-        <nav class="topnav">
-            <a href="index.html">Home</a>
-            <a href="#">Chamber</a>
-            <a href="#">Final</a>
+    <header class="site-header">
+        <div class="brand">
+            <div class="identity">
+                <span class="logo">NN</span>
+                <div>
+                    <p class="site-title">Nicholas Nixon</p>
+                    <p class="site-subtitle">WDD 231 - Web Frontend Development I</p>
+                </div>
+            </div>
+            <button class="menu-button" id="menuButton" aria-controls="primaryNav" aria-expanded="false" type="button">
+                <span class="menu-icon" aria-hidden="true"></span>
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
+        <nav class="topnav" id="primaryNav">
+            <a class="active" href="index.html">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
         </nav>
     </header>
     <main>
         <h1>Home</h1>
 
-        <section class="card">
-            <h2>About Me</h2>
-            <p>My name is Nicholas, you can call me Nick. I live in the Dallas, Texas area. I served in the U.S. Army
-                from
-                2008-2012
-                active duty, and 2012-2014 in the Idaho National Guard. After I moved to Texas to be with my wife. We
-                were
-                sealed in the Dallas Temple in May 2015. I have two wonderful children, one boy and one girl.</p>
-            <p>I have my associate's degree in computer science in software development from Richland Dallas Community
-                College. I currently work as IT Fab Support for Texas Instruments. I'm here to continue my education and
-                working on getting my bachelor degree here.</p>
-        </section>
-        
-        <section class="card">
-            <h2>Student Photo</h2>
-            <img src="images/profile.webp" alt="Nick Image">
+        <section class="grid-two">
+            <article class="card">
+                <h2>About Me</h2>
+                <p>My name is Nicholas, you can call me Nick. I live in the Dallas, Texas area. I served in the U.S. Army
+                    from
+                    2008-2012
+                    active duty, and 2012-2014 in the Idaho National Guard. After I moved to Texas to be with my wife. We
+                    were
+                    sealed in the Dallas Temple in May 2015. I have two wonderful children, one boy and one girl.</p>
+                <p>I have my associate's degree in computer science in software development from Richland Dallas Community
+                    College. I currently work as IT Fab Support for Texas Instruments. I'm here to continue my education and
+                    working on getting my bachelor degree here.</p>
+            </article>
+
+            <article class="card photo-card">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Portrait of Nicholas Nixon" loading="lazy">
+            </article>
         </section>
 
-        <section class="card">
+        <section class="card courses-card">
             <h2>Web Certificate Courses</h2>
+            <div class="filters" role="toolbar" aria-label="Filter courses">
+                <button class="filter-btn active" type="button" data-filter="all">All</button>
+                <button class="filter-btn" type="button" data-filter="cse">CSE</button>
+                <button class="filter-btn" type="button" data-filter="wdd">WDD</button>
+            </div>
+            <p class="credit-total">Total credits: <span id="creditTotal">0</span></p>
+            <div class="course-grid" id="courseGrid"></div>
         </section>
     </main>
     <footer>
@@ -60,8 +85,8 @@
                 <img src="images/instagram-logo-icon.svg" alt="Instagram Icon">
             </a>
         </nav>
-        <p>&copy;<span id="currentyear">e</span> 🐉 Nicholas Nixon 🐉 Mesquite, Texas</p>
-        <p id="lastModified">Last Modified: </p>
+        <p>&copy;<span id="currentyear"></span> 🐉 Nicholas Nixon 🐉 Mesquite, Texas</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
