@@ -1,0 +1,28 @@
+{
+    "family_name": "Peterson",
+    "move_in_date": "12-15-2025",
+    "number_of_people": 4,
+    "bishop_visit": true,
+    "family_members": [
+        {
+            "name": "John Peterson",
+            "gender": "Male",
+            "birthday": "10-04-1987"
+        },
+        {
+            "name": "Jane Peterson",
+            "gender": "Female",
+            "birthday": "07-10-1988"
+        },
+        {
+            "name": "Mark Peterson",
+            "gender": "Male",
+            "birthday": "04-15-2016"
+        },
+        {
+            "name": "Sarah Peterson",
+            "gender": "Female",
+            "birthday": "01-21-2021"
+        }
+    ]
+}

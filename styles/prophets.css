@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border: 1px solid rgb(0 0 0 / 0.2);
+    --text-center: center;
+    --primary-color: #15404d;
+    --second-color: white;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    display: grid;
+}
+
+
+header h1 {
+    font-size: 2em;
+    justify-self: center;
+    align-self: center;
+    padding-left: 5px;
+}
+
+header,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+main {
+    text-align: var(--text-center);
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+#cards {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+#cards img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+
+footer {
+    background-color: #15404d;
+    color: white;
+    margin-top: 15px;
+    border-top: var(--border);
+    text-align: var(--text-center);
+}
+
+.metamorphous-regular {
+    font-family: "Metamorphous", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (min-width: 500px) {
+    #cards {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        position: relative;
+    }
+
+}
