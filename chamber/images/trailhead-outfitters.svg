@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140">
+    <rect width="200" height="140" rx="18" fill="#4a7c9b"/>
+    <path d="M30 95l40-55 30 40 20-25 40 40" fill="none" stroke="#a7d9ee"
+        stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="145" cy="50" r="16" fill="#7fb2cc"/>
+    <text x="20" y="125" fill="#102027" font-family="Orbitron, sans-serif"
+        font-size="12">Trailhead Outfitters</text>
+</svg>

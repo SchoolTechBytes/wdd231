@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Mesa Tech Works",
+        "address": "214 Skyline Blvd, Mesquite, TX 75149",
+        "phone": "(972) 555-0120",
+        "website": "https://example.com/mesa-tech-works",
+        "image": "mesa-tech-works.svg",
+        "membershipLevel": 3,
+        "description": "Automation and IT services for growing businesses."
+    },
+    {
+        "name": "Red Sands Coffee Roasters",
+        "address": "18 Creekside Ave, Mesquite, TX 75150",
+        "phone": "(972) 555-0131",
+        "website": "https://example.com/red-sands-coffee",
+        "image": "red-sands-coffee.svg",
+        "membershipLevel": 2,
+        "description": "Small-batch roasting and community coffee events."
+    },
+    {
+        "name": "Summit Health Collective",
+        "address": "440 Pioneer Dr, Mesquite, TX 75149",
+        "phone": "(972) 555-0146",
+        "website": "https://example.com/summit-health",
+        "image": "summit-health.svg",
+        "membershipLevel": 3,
+        "description": "Neighborhood clinic focused on family wellness."
+    },
+    {
+        "name": "Golden Spur Realty",
+        "address": "102 Market Square, Mesquite, TX 75150",
+        "phone": "(972) 555-0168",
+        "website": "https://example.com/golden-spur-realty",
+        "image": "golden-spur-realty.svg",
+        "membershipLevel": 1,
+        "description": "Local agents specializing in Mesquite neighborhoods."
+    },
+    {
+        "name": "Copperline Studio",
+        "address": "77 Heritage Lane, Mesquite, TX 75149",
+        "phone": "(972) 555-0184",
+        "website": "https://example.com/copperline-studio",
+        "image": "copperline-studio.svg",
+        "membershipLevel": 2,
+        "description": "Branding, signage, and storefront design services."
+    },
+    {
+        "name": "Desert Bloom Nursery",
+        "address": "510 Willow Bend Rd, Mesquite, TX 75150",
+        "phone": "(972) 555-0197",
+        "website": "https://example.com/desert-bloom",
+        "image": "desert-bloom.svg",
+        "membershipLevel": 1,
+        "description": "Native plants, landscaping, and gardening workshops."
+    },
+    {
+        "name": "Trailhead Outdoor Outfitters",
+        "address": "65 Ridgecrest Pkwy, Mesquite, TX 75149",
+        "phone": "(972) 555-0112",
+        "website": "https://example.com/trailhead-outfitters",
+        "image": "trailhead-outfitters.svg",
+        "membershipLevel": 3,
+        "description": "Gear, rentals, and guided trips for North Texas."
+    }
+]

@@ -1,25 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesquite Chamber of Commerce - Directory</title>
-    <meta name="description"
-        content="This site is used for WDD 231: Web Frontend Development I for Nicholas Nixon Mesquite Chamber of Commerce project - Directory page">
-    <meta name="author" content="Nicholas Nixon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mesquite Chamber of Commerce | Directory</title>
+    <meta
+      name="description"
+      content="This site is used for WDD 231: Web Frontend Development I for Nicholas Nixon Mesquite Chamber of Commerce project - Directory page"
+    />
+    <meta name="author" content="Nicholas Nixon" />
 
-    <!--Style links-->
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <!--FaceBook social media meta settings-->
-    <meta property="og:title" content="Directory - Mesquite Chamber of Commerce - WDD 231">
-    <meta property="og:description" content="This site is used for Mesquite Chamber of Commerce - Directory page">
-    <meta property="og:image" content="https://i.postimg.cc/cLprt5b9/man-at-computer.webp">
-    <meta property="og:url" content="https://schooltechbytes.github.io/wdd231/directory.html">
+    <meta
+      property="og:title"
+      content="Mesquite Chamber of Commerce Directory"
+    />
+    <meta
+      property="og:description"
+      content="Browse local Mesquite businesses and organizations in the chamber directory."
+    />
+    <meta property="og:image" content="images/og-directory.svg" />
+    <meta
+      property="og:url"
+      content="https://example.com/mesquite-chamber/directory.html"
+    />
 
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 
-</head>
-<body>
-    
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts/chamber.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo-mark" aria-hidden="true">MC</span>
+        <div class="brand-text">
+          <p class="brand-title">Mesquite</p>
+          <p class="brand-subtitle">Chamber of Commerce</p>
+        </div>
+      </div>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        Menu
+      </button>
+      <nav class="site-nav" id="primary-nav">
+        <a href="#">Home</a>
+        <a href="#">Discover</a>
+        <a class="active" href="directory.html">Directory</a>
+        <a href="#">Join</a>
+      </nav>
+    </header>
+
+    <main class="directory">
+      <section class="directory-hero">
+        <h1>Member Directory</h1>
+        <p>Connect with the businesses building Mesquite's future.</p>
+      </section>
+
+      <section class="view-controls" aria-label="Directory display options">
+        <button class="view-button is-active" type="button" id="grid">
+          Grid View
+        </button>
+        <button class="view-button" type="button" id="list">
+          List View
+        </button>
+      </section>
+
+      <article class="members grid" id="members" aria-live="polite"></article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <h2>Mesquite Chamber of Commerce</h2>
+        <p>100 Commerce Way, Mesquite, TX 75149</p>
+        <p>(972) 555-0142</p>
+        <p>info@mesquitechamber.org</p>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="copyright-year"></span> Mesquite Chamber</p>
+        <p>Nicholas Nixon | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140">
+    <rect width="200" height="140" rx="18" fill="#4a7c9b"/>
+    <rect x="35" y="30" width="130" height="80" rx="14" fill="#c9e6ea"/>
+    <path d="M100 45v50M75 70h50" stroke="#4a7c9b" stroke-width="10"
+        stroke-linecap="round"/>
+    <text x="20" y="125" fill="#102027" font-family="Orbitron, sans-serif"
+        font-size="13">Summit Health</text>
+</svg>

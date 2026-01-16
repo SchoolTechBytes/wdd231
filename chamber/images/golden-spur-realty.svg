@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140">
+    <rect width="200" height="140" rx="18" fill="#4a7c9b"/>
+    <path d="M40 80l60-45 60 45v35H40z" fill="#c9e6ea"/>
+    <path d="M80 115V80h40v35" fill="#4a7c9b"/>
+    <circle cx="140" cy="55" r="18" fill="#7fb2cc"/>
+    <text x="20" y="125" fill="#102027" font-family="Orbitron, sans-serif"
+        font-size="12">Golden Spur Realty</text>
+</svg>
