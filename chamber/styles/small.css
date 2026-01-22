@@ -92,6 +92,11 @@ a {
     border-radius: 999px;
 }
 
+.menu-toggle:focus-visible {
+    outline: 3px solid #102027;
+    outline-offset: 3px;
+}
+
 .site-nav {
     grid-column: 1 / -1;
     display: none;
@@ -110,8 +115,19 @@ a {
     font-weight: 500;
 }
 
+.site-nav a:hover,
+.site-nav a:focus-visible {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
 .site-nav a.active {
     color: #102027;
+}
+
+.site-nav a[aria-current="page"] {
+    font-weight: 700;
 }
 
 .directory {
@@ -144,6 +160,17 @@ a {
     padding: 0.5rem 1rem;
     border-radius: 999px;
     font-weight: 500;
+}
+
+.view-button:hover,
+.view-button:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(16, 32, 39, 0.18);
+}
+
+.view-button:focus-visible {
+    outline: 3px solid #102027;
+    outline-offset: 3px;
 }
 
 .view-button.is-active {
