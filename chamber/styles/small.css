@@ -222,7 +222,7 @@ a {
 }
 
 .member-card a {
-    color: var(--color-accent);
+    color: var(--color-ink);
     font-weight: 500;
 }
 
@@ -265,7 +265,7 @@ a {
 }
 
 .members.list .member-card a {
-    color: var(--color-accent);
+    color: var(--color-ink);
 }
 
 .home {
@@ -448,7 +448,7 @@ a {
 }
 
 .spotlight-card a {
-    color: var(--color-accent);
+    color: var(--color-ink);
     font-weight: 600;
 }
 
