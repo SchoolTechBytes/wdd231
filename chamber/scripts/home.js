@@ -1,3 +1,4 @@
+(() => {
 const weatherSettings = {
     apiKey: "6d39b18bca595249e8cbf5593f8dde06",
     lat: 32.767,
@@ -144,3 +145,4 @@ if (weatherTemp && weatherDesc && forecastGrid) {
 if (spotlightContainer) {
     loadSpotlights();
 }
+})();
