@@ -11,6 +11,12 @@
     --color-muted: #365568;
     --color-accent: #4a7c9b;
     --color-accent-2: #7fb2cc;
+    --color-white: #ffffff;
+    --color-panel: rgba(255, 255, 255, 0.9);
+    --color-panel-muted: rgba(255, 255, 255, 0.75);
+    --color-row-odd: rgba(201, 230, 234, 0.4);
+    --color-row-even: rgba(201, 230, 234, 0.6);
+    --color-tint: rgba(201, 230, 234, 0.5);
     --color-shadow: rgba(28, 56, 72, 0.2);
     --font-heading: "Orbitron", sans-serif;
     --font-body: "Roboto", sans-serif;
@@ -40,7 +46,7 @@ a {
     gap: 1rem;
     align-items: center;
     padding: 1.5rem 1.25rem;
-    background: #7fb2cc;
+    background: var(--color-accent-2);
     border-bottom: 1px solid rgba(16, 32, 39, 0.18);
     position: sticky;
     top: 0;
@@ -48,7 +54,7 @@ a {
 }
 
 .site-header a {
-    color: #102027;
+    color: var(--color-ink);
 }
 
 .brand {
@@ -63,8 +69,8 @@ a {
     width: 2.75rem;
     height: 2.75rem;
     border-radius: 0.75rem;
-    background: #4a7c9b;
-    color: #ffffff;
+    background: var(--color-accent);
+    color: var(--color-white);
     font-family: var(--font-heading);
     font-weight: 700;
 }
@@ -79,13 +85,13 @@ a {
 .brand-subtitle {
     margin: 0.15rem 0 0;
     font-size: 0.85rem;
-    color: #102027;
+    color: var(--color-ink);
 }
 
 .menu-toggle {
     border: 1px solid rgba(16, 32, 39, 0.4);
     background: transparent;
-    color: #102027;
+    color: var(--color-ink);
     font-family: var(--font-heading);
     letter-spacing: 0.08em;
     padding: 0.5rem 0.9rem;
@@ -93,7 +99,7 @@ a {
 }
 
 .menu-toggle:focus-visible {
-    outline: 3px solid #102027;
+    outline: 3px solid var(--color-ink);
     outline-offset: 3px;
 }
 
@@ -124,7 +130,7 @@ a {
 }
 
 .site-nav a.active {
-    color: #102027;
+    color: var(--color-ink);
 }
 
 .site-nav a[aria-current="page"] {
@@ -159,7 +165,7 @@ a {
 
 .view-button {
     border: 1px solid rgba(16, 32, 39, 0.2);
-    background: #eef7f9;
+    background: var(--color-panel);
     color: var(--color-ink);
     padding: 0.5rem 1rem;
     border-radius: 999px;
@@ -173,13 +179,13 @@ a {
 }
 
 .view-button:focus-visible {
-    outline: 3px solid #102027;
+    outline: 3px solid var(--color-ink);
     outline-offset: 3px;
 }
 
 .view-button.is-active {
     background: var(--color-accent);
-    color: #ffffff;
+    color: var(--color-white);
     border-color: transparent;
 }
 
@@ -189,7 +195,7 @@ a {
 }
 
 .member-card {
-    background: rgba(255, 255, 255, 0.75);
+    background: var(--color-panel-muted);
     border: 1px solid rgba(16, 32, 39, 0.08);
     border-radius: 1rem;
     padding: 1.25rem;
@@ -207,7 +213,7 @@ a {
 .member-card h2 {
     margin: 0;
     font-family: var(--font-heading);
-    color: #102027;
+    color: var(--color-ink);
 }
 
 .member-card p {
@@ -216,7 +222,7 @@ a {
 }
 
 .member-card a {
-    color: #2c5a74;
+    color: var(--color-accent);
     font-weight: 500;
 }
 
@@ -227,7 +233,7 @@ a {
     font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #102027;
+    color: var(--color-ink);
     background: var(--color-accent-2);
     border-radius: 999px;
     padding: 0.25rem 0.6rem;
@@ -245,11 +251,11 @@ a {
     gap: 0.35rem;
     border-radius: 0;
     box-shadow: none;
-    background: #f2fafb;
+    background: var(--color-row-odd);
 }
 
 .members.list .member-card:nth-child(even) {
-    background: #dff1f4;
+    background: var(--color-row-even);
 }
 
 .members.list .member-card img,
@@ -259,7 +265,7 @@ a {
 }
 
 .members.list .member-card a {
-    color: #20475b;
+    color: var(--color-accent);
 }
 
 .home {
@@ -288,7 +294,7 @@ a {
     padding: 0.75rem 1.5rem;
     border-radius: 999px;
     background: var(--color-accent);
-    color: #ffffff;
+    color: var(--color-white);
     font-weight: 600;
     letter-spacing: 0.04em;
 }
@@ -297,7 +303,7 @@ a {
     position: absolute;
     right: 1.5rem;
     bottom: 1.5rem;
-    background: #102027;
+    background: var(--color-ink);
 }
 
 .cta-button:hover,
@@ -308,7 +314,7 @@ a {
 }
 
 .cta-button:focus-visible {
-    outline: 3px solid #102027;
+    outline: 3px solid var(--color-ink);
     outline-offset: 3px;
 }
 
@@ -329,7 +335,7 @@ a {
 }
 
 .panel {
-    background: rgba(255, 255, 255, 0.9);
+    background: var(--color-panel);
     border-radius: 1.25rem;
     padding: 1.5rem;
     box-shadow: 0 16px 32px rgba(16, 32, 39, 0.1);
@@ -340,7 +346,7 @@ a {
 .panel h2 {
     margin: 0;
     font-family: var(--font-heading);
-    color: #102027;
+    color: var(--color-ink);
 }
 
 .panel h2::after {
@@ -349,7 +355,7 @@ a {
     width: 100%;
     height: 6px;
     margin-top: 0.5rem;
-    background: #102027;
+    background: var(--color-ink);
     border-radius: 999px;
 }
 
@@ -371,13 +377,7 @@ a {
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
-    color: #102027;
-}
-
-.forecast h3 {
-    margin: 0 0 0.5rem;
-    font-size: 1.05rem;
-    color: var(--color-muted);
+    color: var(--color-ink);
 }
 
 .forecast-grid {
@@ -391,8 +391,8 @@ a {
     justify-content: space-between;
     padding: 0.6rem 0.85rem;
     border-radius: 0.75rem;
-    background: #e8f4f7;
-    color: #102027;
+    background: var(--color-tint);
+    color: var(--color-ink);
     font-weight: 600;
 }
 
@@ -410,7 +410,7 @@ a {
 .spotlight-card {
     display: grid;
     gap: 1rem;
-    background: #f5fbfc;
+    background: var(--color-panel);
     border-radius: 1rem;
     padding: 1rem;
     border: 1px solid rgba(16, 32, 39, 0.08);
@@ -418,14 +418,14 @@ a {
 
 .spotlight-card img {
     border-radius: 0.75rem;
-    background: #ffffff;
+    background: var(--color-white);
     padding: 0.5rem;
 }
 
 .spotlight-card h3 {
     margin: 0 0 0.4rem;
     font-family: var(--font-heading);
-    color: #102027;
+    color: var(--color-ink);
 }
 
 .spotlight-card p {
@@ -440,7 +440,7 @@ a {
     font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #102027;
+    color: var(--color-ink);
     background: var(--color-accent-2);
     border-radius: 999px;
     padding: 0.25rem 0.6rem;
@@ -448,7 +448,7 @@ a {
 }
 
 .spotlight-card a {
-    color: #2c5a74;
+    color: var(--color-accent);
     font-weight: 600;
 }
 
@@ -456,7 +456,7 @@ a {
     display: grid;
     gap: 1.5rem;
     padding: 2.5rem 1.25rem;
-    background: #102027;
+    background: var(--color-ink);
     border-top: 1px solid rgba(16, 32, 39, 0.1);
 }
 
@@ -470,8 +470,8 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 999px;
-    background: #7fb2cc;
-    color: #102027;
+    background: var(--color-accent-2);
+    color: var(--color-ink);
     display: grid;
     place-items: center;
     font-weight: 700;
@@ -483,17 +483,17 @@ a {
 }
 
 .footer-social a:focus-visible {
-    outline: 3px solid #c9e6ea;
+    outline: 3px solid var(--color-bg);
     outline-offset: 3px;
 }
 
 .site-footer h2 {
     margin: 0 0 0.5rem;
     font-family: var(--font-heading);
-    color: #f6fbfc;
+    color: var(--color-white);
 }
 
 .site-footer p {
     margin: 0.35rem 0;
-    color: #c9e6ea;
+    color: var(--color-bg);
 }
