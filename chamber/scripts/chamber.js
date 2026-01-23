@@ -101,7 +101,9 @@ gridButton?.addEventListener("click", showGrid);
 listButton?.addEventListener("click", showList);
 
 showGrid();
-loadMembers();
+if (membersContainer) {
+    loadMembers();
+}
 
 const yearSpan = document.querySelector("#copyright-year");
 if (yearSpan) {

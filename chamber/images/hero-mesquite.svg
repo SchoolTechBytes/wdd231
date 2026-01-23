@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#c9e6ea"/>
+      <stop offset="1" stop-color="#a7d9ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" rx="28" fill="url(#sky)"/>
+  <circle cx="520" cy="90" r="50" fill="#7fb2cc"/>
+  <rect x="60" y="190" width="120" height="150" rx="10" fill="#4a7c9b"/>
+  <rect x="210" y="150" width="140" height="190" rx="10" fill="#5d8eac"/>
+  <rect x="380" y="210" width="140" height="130" rx="10" fill="#4a7c9b"/>
+  <rect x="90" y="220" width="60" height="90" fill="#c9e6ea"/>
+  <rect x="245" y="180" width="70" height="120" fill="#c9e6ea"/>
+  <rect x="415" y="240" width="70" height="80" fill="#c9e6ea"/>
+  <path d="M80 340h480" stroke="#102027" stroke-width="6" stroke-linecap="round"/>
+  <path d="M100 120c40-40 120-40 160 0" stroke="#4a7c9b" stroke-width="10" fill="none"
+    stroke-linecap="round"/>
+  <path d="M270 120c40-40 120-40 160 0" stroke="#7fb2cc" stroke-width="10" fill="none"
+    stroke-linecap="round"/>
+  <text x="70" y="110" fill="#102027" font-family="Orbitron, sans-serif" font-size="24">
+    Mesquite, TX
+  </text>
+</svg>

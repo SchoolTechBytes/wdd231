@@ -116,7 +116,8 @@ a {
 }
 
 .site-nav a:hover,
-.site-nav a:focus-visible {
+.site-nav a:focus-visible,
+.site-nav a:active {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 6px;
@@ -128,6 +129,9 @@ a {
 
 .site-nav a[aria-current="page"] {
     font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
 }
 
 .directory {
@@ -258,12 +262,229 @@ a {
     color: #20475b;
 }
 
+.home {
+    padding: 2rem 1.25rem 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.hero {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(16, 32, 39, 0.18);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    background: var(--color-accent);
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.hero-cta {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    background: #102027;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible,
+.cta-button:active {
+    box-shadow: 0 12px 24px rgba(16, 32, 39, 0.2);
+    transform: translateY(-1px);
+}
+
+.cta-button:focus-visible {
+    outline: 3px solid #102027;
+    outline-offset: 3px;
+}
+
+.home-intro h1 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+.home-intro p {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.home-sections {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 16px 32px rgba(16, 32, 39, 0.1);
+    display: grid;
+    gap: 1rem;
+}
+
+.panel h2 {
+    margin: 0;
+    font-family: var(--font-heading);
+    color: #102027;
+}
+
+.panel h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 6px;
+    margin-top: 0.5rem;
+    background: #102027;
+    border-radius: 999px;
+}
+
+.event-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--color-muted);
+    display: grid;
+    gap: 0.75rem;
+}
+
+.weather-current {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.weather-current .temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #102027;
+}
+
+.forecast h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
+    color: var(--color-muted);
+}
+
+.forecast-grid {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.forecast-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.85rem;
+    border-radius: 0.75rem;
+    background: #e8f4f7;
+    color: #102027;
+    font-weight: 600;
+}
+
+.weather-note {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--color-muted);
+}
+
+.spotlight-grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.spotlight-card {
+    display: grid;
+    gap: 1rem;
+    background: #f5fbfc;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(16, 32, 39, 0.08);
+}
+
+.spotlight-card img {
+    border-radius: 0.75rem;
+    background: #ffffff;
+    padding: 0.5rem;
+}
+
+.spotlight-card h3 {
+    margin: 0 0 0.4rem;
+    font-family: var(--font-heading);
+    color: #102027;
+}
+
+.spotlight-card p {
+    margin: 0 0 0.35rem;
+    color: var(--color-muted);
+}
+
+.spotlight-card .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #102027;
+    background: var(--color-accent-2);
+    border-radius: 999px;
+    padding: 0.25rem 0.6rem;
+    width: fit-content;
+}
+
+.spotlight-card a {
+    color: #2c5a74;
+    font-weight: 600;
+}
+
 .site-footer {
     display: grid;
     gap: 1.5rem;
     padding: 2.5rem 1.25rem;
     background: #102027;
     border-top: 1px solid rgba(16, 32, 39, 0.1);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background: #7fb2cc;
+    color: #102027;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+}
+
+.footer-social img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social a:focus-visible {
+    outline: 3px solid #c9e6ea;
+    outline-offset: 3px;
 }
 
 .site-footer h2 {
