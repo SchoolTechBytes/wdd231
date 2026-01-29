@@ -1,6 +1,73 @@
 const courseGrid = document.getElementById('courseGrid');
 const creditTotal = document.getElementById('creditTotal');
 const filterButtons = document.querySelectorAll('.filter-btn');
+const courseModal = document.getElementById('courseModal');
+
+const displayCourseDetails = (course) => {
+    if (!courseModal) {
+        return;
+    }
+
+    courseModal.innerHTML = '';
+
+    const header = document.createElement('div');
+    header.className = 'modal-header';
+
+    const heading = document.createElement('h2');
+    heading.id = 'courseModalTitle';
+    heading.textContent = `${course.subject} ${course.number}`;
+
+    const closeButton = document.createElement('button');
+    closeButton.className = 'modal-close';
+    closeButton.type = 'button';
+    closeButton.setAttribute('aria-label', 'Close');
+    closeButton.textContent = '×';
+    closeButton.addEventListener('click', () => courseModal.close());
+
+    header.append(heading, closeButton);
+
+    const body = document.createElement('div');
+    body.className = 'modal-body';
+
+    const title = document.createElement('p');
+    title.innerHTML = `<span class="modal-label">Title:</span> ${course.title}`;
+
+    const credits = document.createElement('p');
+    credits.innerHTML = `<span class="modal-label">Credits:</span> ${course.credits}`;
+
+    const description = document.createElement('p');
+    description.id = 'courseModalDescription';
+    description.innerHTML = `<span class="modal-label">Description:</span> ${course.description}`;
+
+    const certificate = document.createElement('p');
+    certificate.innerHTML = `<span class="modal-label">Certificate:</span> ${course.certificate}`;
+
+    const techLabel = document.createElement('p');
+    techLabel.innerHTML = `<span class="modal-label">Technology stack:</span>`;
+
+    const techList = document.createElement('ul');
+    techList.className = 'modal-tech';
+    course.technology.forEach((item) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = item;
+        techList.appendChild(listItem);
+    });
+
+    body.append(title, credits, description, certificate, techLabel, techList);
+
+    courseModal.append(header, body);
+    courseModal.setAttribute('aria-labelledby', 'courseModalTitle');
+    courseModal.setAttribute('aria-describedby', 'courseModalDescription');
+    courseModal.showModal();
+};
+
+if (courseModal) {
+    courseModal.addEventListener('click', (event) => {
+        if (event.target === courseModal) {
+            courseModal.close();
+        }
+    });
+}
 
 const getFilteredCourses = (filter) => {
     if (filter === 'all') {
@@ -43,6 +110,15 @@ const renderCourses = (courseList) => {
         credits.textContent = `${course.credits} credits`;
 
         card.append(title, name, credits);
+        card.addEventListener('click', () => displayCourseDetails(course));
+        card.setAttribute('role', 'button');
+        card.setAttribute('tabindex', '0');
+        card.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                displayCourseDetails(course);
+            }
+        });
         courseGrid.appendChild(card);
     });
 

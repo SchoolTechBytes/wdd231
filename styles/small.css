@@ -264,6 +264,7 @@ main h1 {
     padding: 0.75rem;
     display: grid;
     gap: 0.35rem;
+    cursor: pointer;
 }
 
 .course-card h3 {
@@ -283,6 +284,87 @@ main h1 {
 
 .course-card.completed h3 {
     color: #1f6f3a;
+}
+
+.course-modal {
+    border: none;
+    border-radius: var(--radius);
+    width: min(92vw, 520px);
+    padding: 0;
+    background: #fff;
+    box-shadow: var(--shadow);
+    margin: auto;
+}
+
+.course-modal::backdrop {
+    background: rgb(17 24 39 / 0.55);
+    backdrop-filter: blur(2px);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--teal);
+    color: #fff;
+}
+
+.modal-header h2 {
+    font-size: 1.2rem;
+}
+
+.modal-close {
+    border: none;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--teal);
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+    background: #111827;
+    color: #fff;
+}
+
+.modal-body {
+    padding: 1rem 1.25rem 1.25rem;
+    display: grid;
+    gap: 0.6rem;
+}
+
+.modal-body p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.modal-label {
+    font-weight: 700;
+    color: var(--slate);
+}
+
+.modal-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-tech li {
+    background: #f1ede4;
+    border: var(--border);
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
 }
 
 footer {
