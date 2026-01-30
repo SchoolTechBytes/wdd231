@@ -497,3 +497,183 @@ a {
     margin: 0.35rem 0;
     color: var(--color-bg);
 }
+
+.join {
+    padding: 2rem 1.25rem 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.join-form {
+    background: var(--color-panel);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 16px 32px rgba(16, 32, 39, 0.1);
+}
+
+.join-form h1 {
+    margin: 0 0 1rem;
+    font-family: var(--font-heading);
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    display: grid;
+    gap: 0.35rem;
+    font-weight: 600;
+    color: var(--color-ink);
+}
+
+input,
+select,
+textarea {
+    border: 1px solid rgba(16, 32, 39, 0.2);
+    border-radius: 0.6rem;
+    padding: 0.6rem 0.75rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 2px;
+}
+
+input[type="submit"] {
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.membership-levels {
+    display: grid;
+    gap: 1rem;
+}
+
+.membership-levels h2 {
+    margin: 0;
+    font-family: var(--font-heading);
+}
+
+.level-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+.level-card {
+    background: var(--color-panel);
+    border-radius: 1rem;
+    padding: 1rem;
+    border: 1px solid rgba(16, 32, 39, 0.08);
+    box-shadow: 0 12px 24px rgba(16, 32, 39, 0.08);
+    animation: levelPulse 1.6s ease-in-out;
+}
+
+.level-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.level-card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.level-card:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes levelPulse {
+    0% {
+        transform: translateY(200px);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.level-card h3 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.level-card p {
+    margin: 0 0 0.75rem;
+    color: var(--color-muted);
+}
+
+.level-button {
+    border: 1px solid rgba(16, 32, 39, 0.3);
+    background: transparent;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.membership-modal {
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 420px;
+}
+
+.membership-modal::backdrop {
+    background: rgba(16, 32, 39, 0.45);
+}
+
+.membership-modal h3 {
+    margin-top: 0;
+    font-family: var(--font-heading);
+}
+
+.membership-modal ul {
+    margin: 0 0 1rem;
+    padding-left: 1.1rem;
+    color: var(--color-muted);
+}
+
+.modal-close {
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.thankyou {
+    padding: 2rem 1.25rem 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.thankyou-details dl {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+}
+
+.thankyou-details div {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.thankyou-details dt {
+    font-weight: 700;
+    color: var(--color-ink);
+}
+
+.thankyou-details dd {
+    margin: 0;
+    color: var(--color-muted);
+}

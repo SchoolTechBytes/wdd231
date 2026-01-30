@@ -4,20 +4,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesquite Chamber of Commerce | Home</title>
+    <title>Mesquite Chamber of Commerce | Thank You</title>
     <meta name="description"
-      content="This site is used for WDD 231: Web Frontend Development I for Nicholas Nixon Mesquite Chamber of Commerce project - Mesquite Chamber of Commerce Home.">
+      content="Thank you for applying to the Mesquite Chamber of Commerce.">
     <meta name="author" content="Nicholas Nixon">
 
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
-    <meta property="og:title" content="Mesquite Chamber of Commerce">
+    <meta property="og:title" content="Thank You - Mesquite Chamber">
     <meta property="og:description"
-      content="Connect with local businesses, events, and resources in Mesquite.">
-    <meta property="og:image"
+      content="We received your membership application.">
+    <meta property="og:image" 
       content="https://schooltechbytes.github.io/wdd231/chamber/images/Texas_Cowboy.jpg">
     <meta property="og:url"
-      content="https://example.com/mesquite-chamber/index.html">
+      content="https://example.com/mesquite-chamber/thankyou.html">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -30,7 +30,7 @@
       rel="stylesheet">
 
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
   </head>
 
   <body>
@@ -47,69 +47,50 @@
         Menu
       </button>
       <nav class="site-nav" id="primary-nav">
-        <a class="active" href="index.html" aria-current="page">Home</a>
+        <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
         <a href="join.html">Join</a>
       </nav>
     </header>
 
-    <main class="home">
-      <section class="hero">
-        <img src="images/hero-mesquite.svg"
-          alt="Mesquite skyline with commerce icons" width="1200"
-          height="500" />
-        <a class="cta-button hero-cta" href="join.html">Join the Chamber</a>
-      </section>
-
-      <section class="home-intro">
-        <h1>Home</h1>
+    <main class="thankyou">
+      <section class="panel">
+        <h1>Thank You for Applying</h1>
         <p>
-          Welcome to the Mesquite Chamber of Commerce. Discover events, local
-          business insights, and ways to get involved.
+          We appreciate your interest in joining the Mesquite Chamber of
+          Commerce. A member of our team will follow up soon.
         </p>
       </section>
 
-      <section class="home-sections">
-        <section class="panel events">
-          <h2>Events</h2>
-          <ul class="event-list">
-            <li>
-              <strong>Business After Hours</strong> - March 18, 6:00 PM at
-              Skyline Atrium.
-            </li>
-            <li>
-              <strong>Small Business Workshop</strong> - March 25, 9:30 AM at
-              Mesquite Innovation Hub.
-            </li>
-            <li>
-              <strong>Spring Community Expo</strong> - April 6, 10:00 AM at
-              Downtown Plaza.
-            </li>
-          </ul>
-        </section>
-
-        <section class="panel weather-current-panel">
-          <h2>Current Weather</h2>
-          <div class="weather-current">
-            <p class="temp"><span id="weather-temp">--</span>°</p>
-            <p id="weather-desc">Loading forecast...</p>
+      <section class="panel thankyou-details">
+        <h2>Application Summary</h2>
+        <dl>
+          <div>
+            <dt>First Name</dt>
+            <dd id="summary-first">-</dd>
           </div>
-          <p class="weather-note" id="weather-note">
-            Update the API key in <code>scripts/home.js</code> to load live
-            data.
-          </p>
-        </section>
-
-        <section class="panel weather-forecast">
-          <h2>Weather Forecast</h2>
-          <div class="forecast-grid" id="forecast"></div>
-        </section>
-      </section>
-
-      <section class="panel spotlights">
-        <h2>Member Spotlights</h2>
-        <div class="spotlight-grid" id="spotlights"></div>
+          <div>
+            <dt>Last Name</dt>
+            <dd id="summary-last">-</dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd id="summary-email">-</dd>
+          </div>
+          <div>
+            <dt>Mobile</dt>
+            <dd id="summary-mobile">-</dd>
+          </div>
+          <div>
+            <dt>Organization</dt>
+            <dd id="summary-org">-</dd>
+          </div>
+          <div>
+            <dt>Submitted</dt>
+            <dd id="summary-time">-</dd>
+          </div>
+        </dl>
       </section>
     </main>
 

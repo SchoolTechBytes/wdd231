@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesquite Chamber of Commerce | Join</title>
+    <meta name="description"
+      content="Apply for membership with the Mesquite Chamber of Commerce.">
+    <meta name="author" content="Nicholas Nixon">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Join the Mesquite Chamber">
+    <meta property="og:description"
+      content="Apply for membership and explore chamber benefits.">
+    <meta property="og:image"
+      content="https://schooltechbytes.github.io/wdd231/chamber/images/Texas_Cowboy.jpg">
+    <meta property="og:url"
+      content="https://example.com/mesquite-chamber/join.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet">
+
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <span class="logo-mark" aria-hidden="true">MC</span>
+        <div class="brand-text">
+          <p class="brand-title">Mesquite</p>
+          <p class="brand-subtitle">Chamber of Commerce</p>
+        </div>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false"
+        aria-controls="primary-nav">
+        Menu
+      </button>
+      <nav class="site-nav" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a class="active" href="join.html" aria-current="page">Join</a>
+      </nav>
+    </header>
+
+    <main class="join">
+      <section class="join-form">
+        <h1>Membership Application Form</h1>
+        <form method="get" action="thankyou.html">
+          <label>
+            First Name
+            <input type="text" name="firstName" title="Enter your first name"
+              autocomplete="given-name" required>
+          </label>
+          <label>
+            Last Name
+            <input type="text" name="lastName" title="Enter your last name"
+              autocomplete="family-name" required>
+          </label>
+          <label>
+            Organizational Title
+            <input type="text" name="orgTitle"
+              title="Enter your organizational title"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\\-\\s ]{7,}"
+              placeholder="Business Development Lead">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" title="Enter your email address"
+              autocomplete="email"
+              placeholder="name@example.com" required>
+          </label>
+          <label>
+            Mobile Phone
+            <input type="tel" name="mobile"
+              title="Enter your mobile phone number" autocomplete="tel"
+              required>
+          </label>
+          <label>
+            Business/Organization Name
+            <input type="text" name="organization"
+              title="Enter your organization name" autocomplete="organization"
+              required>
+          </label>
+          <label>
+            Membership Level
+            <select name="membership" title="Select a membership level"
+              required>
+              <option value disabled selected>Select a level</option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+          <label>
+            Business Description
+            <textarea name="description" title="Describe your business"
+              rows="4"></textarea>
+          </label>
+          <input type="hidden" name="timestamp" id="timestamp">
+          <input type="submit" value="Submit Application">
+        </form>
+      </section>
+
+      <section class="membership-levels">
+        <h2>Membership Levels</h2>
+        <div class="level-cards">
+          <article class="level-card">
+            <h3>Non Profit Membership</h3>
+            <p>Free membership for qualifying nonprofit organizations.</p>
+            <button class="level-button" type="button" data-modal="modal-np">
+              Learn More
+            </button>
+          </article>
+          <article class="level-card">
+            <h3>Bronze Membership</h3>
+            <p>Entry-level access to resources and events.</p>
+            <button class="level-button" type="button"
+              data-modal="modal-bronze">
+              Learn More
+            </button>
+          </article>
+          <article class="level-card">
+            <h3>Silver Membership</h3>
+            <p>Expanded marketing support and networking perks.</p>
+            <button class="level-button" type="button"
+              data-modal="modal-silver">
+              Learn More
+            </button>
+          </article>
+          <article class="level-card">
+            <h3>Gold Membership</h3>
+            <p>Premium visibility, training, and sponsorship benefits.</p>
+            <button class="level-button" type="button" data-modal="modal-gold">
+              Learn More
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <dialog id="modal-np" class="membership-modal">
+        <h3>Non Profit Membership</h3>
+        <ul>
+          <li>Basic directory listing</li>
+          <li>Invitations to community networking events</li>
+          <li>Access to chamber newsletters</li>
+        </ul>
+        <button class="modal-close" type="button">Close</button>
+      </dialog>
+
+      <dialog id="modal-bronze" class="membership-modal">
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>Directory listing with business description</li>
+          <li>Member-only training sessions</li>
+          <li>Discounted event tickets</li>
+        </ul>
+        <button class="modal-close" type="button">Close</button>
+      </dialog>
+
+      <dialog id="modal-silver" class="membership-modal">
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>Priority placement in the business directory</li>
+          <li>Spotlight rotation on the home page</li>
+          <li>Quarterly business mentorship sessions</li>
+        </ul>
+        <button class="modal-close" type="button">Close</button>
+      </dialog>
+
+      <dialog id="modal-gold" class="membership-modal">
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>Featured sponsorship opportunities</li>
+          <li>Premium advertising package</li>
+          <li>Access to leadership roundtables</li>
+        </ul>
+        <button class="modal-close" type="button">Close</button>
+      </dialog>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <h2>Mesquite Chamber of Commerce</h2>
+        <p>100 Commerce Way, Mesquite, TX 75149</p>
+        <p>(972) 555-0142</p>
+        <p>info@mesquitechamber.org</p>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Visit our YouTube channel">
+          <img src="images/icon-youtube.svg" alt aria-hidden="true">
+        </a>
+        <a href="#" aria-label="Visit our Twitter profile">
+          <img src="images/icon-twitter.svg" alt aria-hidden="true">
+        </a>
+        <a href="#" aria-label="Visit our LinkedIn profile">
+          <img src="images/icon-linkedin.svg" alt aria-hidden="true">
+        </a>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="copyright-year"></span> Mesquite Chamber</p>
+        <p>Nicholas Nixon | WDD 231</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </footer>
+  </body>
+
+</html>
