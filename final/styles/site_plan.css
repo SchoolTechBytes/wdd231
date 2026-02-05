@@ -1,0 +1,112 @@
+:root {
+    --primary: #C1440E;
+    /* Terracotta/Rust */
+    --secondary: #212121;
+    /* Dark Grey */
+    --accent: #FFC107;
+    /* Gold */
+    --text-light: #E0E0E0;
+    /* Silver/White */
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--secondary);
+    color: var(--text-light);
+    line-height: 1.6;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--primary);
+    margin-bottom: 0.5em;
+}
+
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--accent);
+    /* improved contrast for smaller headings */
+    margin-bottom: 0.5em;
+}
+
+header {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--accent);
+    margin: 40px 0;
+}
+
+/* Palette Table */
+.colors {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.colors td {
+    padding: 30px 10px;
+    text-align: center;
+    border: 1px solid white;
+    color: black;
+    font-weight: bold;
+}
+
+.colors .primary {
+    background-color: #C1440E;
+    color: white;
+}
+
+.colors .secondary {
+    background-color: #212121;
+    color: white;
+}
+
+.colors .accent {
+    background-color: #FFC107;
+}
+
+.colors .text-color {
+    background-color: #E0E0E0;
+}
+
+/* Typography Example */
+.example-text {
+    border: 1px solid var(--text-light);
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Wireframes */
+img {
+    max-width: 600px;
+    height: auto;
+    border: 2px solid var(--text-light);
+    background-color: white;
+    /* Wireframes typically need white bg */
+    margin-bottom: 20px;
+}
+
+.logo-box {
+    background-color: black;
+    color: var(--primary);
+    font-family: var(--font-heading);
+    font-size: 2em;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--accent);
+    display: inline-block;
+}

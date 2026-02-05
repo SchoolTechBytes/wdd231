@@ -21,7 +21,7 @@ const displayCourseDetails = (course) => {
     closeButton.className = 'modal-close';
     closeButton.type = 'button';
     closeButton.setAttribute('aria-label', 'Close');
-    closeButton.textContent = '×';
+    closeButton.textContent = 'x';
     closeButton.addEventListener('click', () => courseModal.close());
 
     header.append(heading, closeButton);
