@@ -677,3 +677,100 @@ input[type="submit"] {
     margin: 0;
     color: var(--color-muted);
 }
+
+.discover {
+    padding: 2rem 1.25rem 3rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.discover-intro h1 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+}
+
+.discover-intro p {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.visit-message {
+    background: var(--color-panel);
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    color: var(--color-ink);
+    border: 1px solid rgba(16, 32, 39, 0.12);
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    background: var(--color-panel);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    display: grid;
+    gap: 0.75rem;
+    border: 1px solid rgba(16, 32, 39, 0.08);
+    box-shadow: 0 12px 26px rgba(16, 32, 39, 0.08);
+}
+
+.discover-card h2 {
+    margin: 0;
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+}
+
+.discover-card figure {
+    margin: 0;
+    border-radius: 0.85rem;
+    overflow: hidden;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    color: var(--color-muted);
+}
+
+.discover-card p {
+    margin: 0;
+    color: var(--color-muted);
+}
+
+.discover-card button {
+    justify-self: start;
+    border: none;
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 0.45rem 0.9rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.card-1 { grid-area: card1; }
+.card-2 { grid-area: card2; }
+.card-3 { grid-area: card3; }
+.card-4 { grid-area: card4; }
+.card-5 { grid-area: card5; }
+.card-6 { grid-area: card6; }
+.card-7 { grid-area: card7; }
+.card-8 { grid-area: card8; }
