@@ -22,7 +22,34 @@
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/main.js" type="module"></script>
+    <script>
+        // Simple script to read URL params and display them
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const container = document.getElementById('confirmation-details');
+
+            if (params.has('captain')) {
+                let html = '<h3>Submission Receipt</h3>';
+                params.forEach((value, key) => {
+                    // Capitalize key
+                    const label = key.charAt(0).toUpperCase() + key.slice(1);
+                    html += `
+                        <div class="data-row">
+                            <span class="data-label">${label}:</span>
+                            <span>${value}</span>
+                        </div>
+                    `;
+                });
+                container.innerHTML = html;
+            } else {
+                container.innerHTML = '<p>No new submission data found.</p>';
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -67,31 +94,6 @@
         </div>
     </footer>
 
-    <script src="scripts/main.js" type="module"></script>
-    <script>
-        // Simple script to read URL params and display them
-        document.addEventListener('DOMContentLoaded', () => {
-            const params = new URLSearchParams(window.location.search);
-            const container = document.getElementById('confirmation-details');
-
-            if (params.has('captain')) {
-                let html = '<h3>Submission Receipt</h3>';
-                params.forEach((value, key) => {
-                    // Capitalize key
-                    const label = key.charAt(0).toUpperCase() + key.slice(1);
-                    html += `
-                        <div class="data-row">
-                            <span class="data-label">${label}:</span>
-                            <span>${value}</span>
-                        </div>
-                    `;
-                });
-                container.innerHTML = html;
-            } else {
-                container.innerHTML = '<p>No new submission data found.</p>';
-            }
-        });
-    </script>
 </body>
 
 </html>

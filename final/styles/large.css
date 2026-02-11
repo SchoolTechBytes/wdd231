@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav-links li {
+    padding: 0;
+    margin-left: var(--spacing-lg);
+    border: none;
+  }
+
+  .grid-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
