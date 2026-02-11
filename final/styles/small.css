@@ -216,6 +216,7 @@ nav {
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -461,11 +462,6 @@ textarea:focus {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   border-left: 3px solid var(--accent);
-}
-
-/* JS Generated Elements Utilities */
-.card {
-  cursor: pointer;
 }
 
 .card-subtitle {
