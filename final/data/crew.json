@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "name": "Capt. Jax Vega",
+        "role": "Pilot",
+        "species": "Human",
+        "rate": 500,
+        "available": true,
+        "skills": [
+            "Evasion",
+            "Navigation",
+            "Combat"
+        ],
+        "experience": "15 years",
+        "bio": "Veteran freelance pilot with experience in blockade running."
+    },
+    {
+        "id": 2,
+        "name": "X7-99",
+        "role": "Engineer",
+        "species": "Droid",
+        "rate": 300,
+        "available": true,
+        "skills": [
+            "Repair",
+            "Hacking",
+            "Calculations"
+        ],
+        "experience": "50 years",
+        "bio": "Modified industrial droid with expanded problem-solving subroutines."
+    },
+    {
+        "id": 3,
+        "name": "Lyra 'Spanner' Vance",
+        "role": "Mechanic",
+        "species": "Human",
+        "rate": 350,
+        "available": false,
+        "skills": [
+            "Hull Repair",
+            "Engine Tuning",
+            "Welding"
+        ],
+        "experience": "8 years",
+        "bio": "Can fix anything with a wrench and some duct tape."
+    },
+    {
+        "id": 4,
+        "name": "Thrax",
+        "role": "Security",
+        "species": "Krogan-like",
+        "rate": 450,
+        "available": true,
+        "skills": [
+            "Heavy Weapons",
+            "Intimidation",
+            "Guarding"
+        ],
+        "experience": "20 years",
+        "bio": "A towering figure who ensures cargo safety."
+    },
+    {
+        "id": 5,
+        "name": "Dr. Elara Miri",
+        "role": "Medic",
+        "species": "Asari-like",
+        "rate": 600,
+        "available": true,
+        "skills": [
+            "Surgery",
+            "Xenobiology",
+            "First Aid"
+        ],
+        "experience": "120 years",
+        "bio": "Expert in treating injuries from vacuum exposure and blaster burns."
+    },
+    {
+        "id": 6,
+        "name": "Nix",
+        "role": "Scout",
+        "species": "Salarian-like",
+        "rate": 250,
+        "available": true,
+        "skills": [
+            "Stealth",
+            "Recon",
+            "Data Analysis"
+        ],
+        "experience": "5 years",
+        "bio": "Fast, quiet, and hyper-observant."
+    },
+    {
+        "id": 7,
+        "name": "Unit 404",
+        "role": "Navigator",
+        "species": "AI Construct",
+        "rate": 400,
+        "available": true,
+        "skills": [
+            "Astrogation",
+            "Subspace Comms",
+            "Encoding"
+        ],
+        "experience": "N/A",
+        "bio": "Processing power equivalent to a fleet flagship."
+    },
+    {
+        "id": 8,
+        "name": "Borris The Blade",
+        "role": "Mercenary",
+        "species": "Human",
+        "rate": 420,
+        "available": false,
+        "skills": [
+            "Blades",
+            "Hand-to-Hand",
+            "Tactics"
+        ],
+        "experience": "12 years",
+        "bio": "Preferring up-close encounters, Borris is a master duelist."
+    },
+    {
+        "id": 9,
+        "name": "Sarya",
+        "role": "Diplomat",
+        "species": "Twi'lek-like",
+        "rate": 550,
+        "available": true,
+        "skills": [
+            "Negotiation",
+            "Languages",
+            "Etiquette"
+        ],
+        "experience": "10 years",
+        "bio": "Can talk your way out of (or into) anything."
+    },
+    {
+        "id": 10,
+        "name": "Grom",
+        "role": "Loader",
+        "species": "Giant",
+        "rate": 150,
+        "available": true,
+        "skills": [
+            "Heavy Lifting",
+            "Endurance",
+            "Sorting"
+        ],
+        "experience": "3 years",
+        "bio": "Gentle giant with immense strength for cargo handling."
+    },
+    {
+        "id": 11,
+        "name": "Voss",
+        "role": "Tech Specialist",
+        "species": "Cyborg",
+        "rate": 380,
+        "available": true,
+        "skills": [
+            "Encryption",
+            "Systems Bypass",
+            "Diagnostics"
+        ],
+        "experience": "9 years",
+        "bio": "More machine than man, interface leads directly to neural network."
+    },
+    {
+        "id": 12,
+        "name": "Captain Rogers",
+        "role": "Pilot",
+        "species": "Human",
+        "rate": 520,
+        "available": false,
+        "skills": [
+            "Leadership",
+            "Atmospheric Flight",
+            "Combat"
+        ],
+        "experience": "25 years",
+        "bio": "An old war hero looking for quiet transport jobs."
+    },
+    {
+        "id": 13,
+        "name": "Kip",
+        "role": "Cook",
+        "species": "Unknown Small Fuzzy",
+        "rate": 200,
+        "available": true,
+        "skills": [
+            "Cooking",
+            "Foraging",
+            "Morale"
+        ],
+        "experience": "Unknown",
+        "bio": "Makes the best stew this side of the nebula. Don't ask what's in it."
+    },
+    {
+        "id": 14,
+        "name": "Nova",
+        "role": "Gunner",
+        "species": "Human",
+        "rate": 300,
+        "available": true,
+        "skills": [
+            "Turrets",
+            "Precision Aim",
+            "Maintenance"
+        ],
+        "experience": "4 years",
+        "bio": "Young but talented sharp-shooter."
+    },
+    {
+        "id": 15,
+        "name": "Zara",
+        "role": "Translator",
+        "species": "Droid",
+        "rate": 280,
+        "available": true,
+        "skills": [
+            "6 Million Forms",
+            "Protocol",
+            "History"
+        ],
+        "experience": "10 years",
+        "bio": "Specializes in ancient dialects and trade languages."
+    },
+    {
+        "id": 16,
+        "name": "Rex",
+        "role": "Security",
+        "species": "Canine-oid",
+        "rate": 300,
+        "available": true,
+        "skills": [
+            "Tracking",
+            "Guarding",
+            "Fetch"
+        ],
+        "experience": "7 years",
+        "bio": "A very good boy who bites bad guys."
+    }
+]

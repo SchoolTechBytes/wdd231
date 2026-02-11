@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Station Dracka | Confirmed</title>
+    <meta name="description" content="Docking request confirmation page.">
+    <meta name="author" content="Nicholas">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Space Station Dracka | Request Confirmed">
+    <meta property="og:description" content="Your docking request has been received.">
+    <meta property="og:image" content="https://github.com/user/repo/images/social-share.png">
+    <meta property="og:url" content="https://github.com/user/repo/confirm.html">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DRACKA STATION</div>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docking.html" class="active">Docking</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container hero hero-simple">
+            <h1 class="success-text">Docking Request Confirmed</h1>
+            <p>Your data has been transmitted to station control.</p>
+
+            <div class="confirmation-box" id="confirmation-details">
+                <!-- Filled by JS -->
+                <p>Retrieving data...</p>
+            </div>
+
+            <br><br>
+            <a href="index.html" class="btn">Return Home</a>
+            <a href="directory.html" class="btn btn-gap">Browse Directory</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <span>|</span>
+                <a href="#">Video Demo (Coming Soon)</a>
+            </div>
+            <p>&copy; 2026 Space Station Dracka</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script>
+        // Simple script to read URL params and display them
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const container = document.getElementById('confirmation-details');
+
+            if (params.has('captain')) {
+                let html = '<h3>Submission Receipt</h3>';
+                params.forEach((value, key) => {
+                    // Capitalize key
+                    const label = key.charAt(0).toUpperCase() + key.slice(1);
+                    html += `
+                        <div class="data-row">
+                            <span class="data-label">${label}:</span>
+                            <span>${value}</span>
+                        </div>
+                    `;
+                });
+                container.innerHTML = html;
+            } else {
+                container.innerHTML = '<p>No new submission data found.</p>';
+            }
+        });
+    </script>
+</body>
+
+</html>

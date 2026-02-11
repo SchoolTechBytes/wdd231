@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Station Dracka | Docking</title>
+    <meta name="description"
+        content="Pre-register your ship for docking at Space Station Dracka. Secure your bay today.">
+    <meta name="author" content="Nicholas">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Space Station Dracka | Docking">
+    <meta property="og:description" content="Secure a berth for your vessel at the Centauri System's premier hub.">
+    <meta property="og:image" content="https://github.com/user/repo/images/social-share.png">
+    <meta property="og:url" content="https://github.com/user/repo/docking.html">
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DRACKA STATION</div>
+                <div class="hamburger" id="hamburger">&#9776;</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docking.html" class="active">Docking</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container hero hero-simple">
+            <h1>Docking Services</h1>
+            <p>Secure a berth for your vessel. Standard and priority docking available.</p>
+        </section>
+
+        <section class="container">
+            <form id="docking-form" action="confirm.html" method="GET" class="docking-form">
+                <div class="form-group">
+                    <label for="captain">Captain Name</label>
+                    <input type="text" id="captain" name="captain" required placeholder="e.g. Mal Reynolds">
+                </div>
+
+                <div class="form-group">
+                    <label for="ship">Ship Name</label>
+                    <input type="text" id="ship" name="ship" required placeholder="e.g. Serenity">
+                </div>
+
+                <div class="form-group">
+                    <label for="class">Ship Class</label>
+                    <select id="class" name="class" required>
+                        <option value="">Select Class...</option>
+                        <option value="Fighter">Fighter / Scout</option>
+                        <option value="Freighter">Freighter / Transport</option>
+                        <option value="Cruiser">Cruiser / Capital</option>
+                        <option value="Shuttle">Shuttle / Personnel</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="arrival">Arrival Date</label>
+                    <input type="date" id="arrival" name="arrival" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cargo">Cargo Type</label>
+                    <input type="text" id="cargo" name="cargo" placeholder="e.g. Livestocks, Minerals, None">
+                </div>
+
+                <div class="form-group">
+                    <label for="requests">Special Requests</label>
+                    <textarea id="requests" name="requests" rows="4"
+                        placeholder="Fuel, Repairs, Discrete entry..."></textarea>
+                </div>
+
+                <button type="submit" class="btn w-100">Submit Request</button>
+            </form>
+        </section>
+
+        <section class="container stats">
+            <h2>Recent Scheduled Dockings</h2>
+            <div id="recent-dockings">
+                <!-- Populated by JS -->
+                <p>Loading schedule...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="attributions.html">Attributions</a>
+                <span>|</span>
+                <a href="#">Video Demo (Coming Soon)</a>
+            </div>
+            <p>&copy; 2026 Space Station Dracka</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/docking.js" type="module"></script>
+</body>
+
+</html>
